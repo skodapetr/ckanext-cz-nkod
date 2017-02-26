@@ -1,0 +1,54 @@
+/* Log navigation links. */
+.masthead {
+  background-color: rgb(5, 127, 165);
+}
+
+/* Site footer. */
+.site-footer,
+body {
+  background-color: rgb(5, 127, 165);
+}
+
+/* Change the colors of the "Search Your Data" box. */
+.homepage .module-search .module-content {
+  background-color: rgb(5, 127, 165);
+}
+
+/* Update dialog. */
+.logo img {
+    height: 48px;
+    margin: 4px 0 4px 0;
+}
+
+/* Background. */
+
+@media (min-width: 768px) {
+  .hero {
+    background: url("../../../ckanext_cz_nkod/images/background.gif");
+    background-size: auto 100%;
+    background-repeat:  repeat-x ;
+  }
+}
+
+.ie7 .hero {
+    background: url("../../../ckanext_cz_nkod/images/background.gif");
+    background-size: auto 100%;
+    background-repeat:  repeat-x ;
+}
+
+/* Box status. */
+
+.homepage .stats ul li:first-of-type {
+    width: 40%;
+}
+
+.homepage .stats ul li {
+    width: 30%;
+}
+
+/* Footer. */
+
+.site-footer .row .indent {
+    margin-left: 1em;
+}
+

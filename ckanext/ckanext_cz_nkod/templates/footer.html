@@ -1,0 +1,55 @@
+{% ckan_extends %}
+
+{% block footer_content %}
+  <div class="row">
+    <div class="span3">
+      {% trans %}<strong>Hlavní navigace</strong>{% endtrans %}
+      <ul class="unstyled indent">
+        <li>{% trans %}<a href="/">Domů</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="/dataset">Seznam datových sad</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="/organization">Seznam organizací</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="">Aktuality</a>{% endtrans %}</li>
+      </ul>
+      <div class="attribution">
+        {% block footer_attribution %}
+          <p>{% trans %}<strong>Powered by</strong>{% endtrans %}
+            <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a>
+          </p>
+        {% endblock %}
+      </div>
+    </div>
+    <div class="span3">
+      {% trans %}<strong>Pro poskytovatele dat</strong>{% endtrans %}
+      <ul class="unstyled indent">
+        <li>{% trans %}<a href="">Registrace datové sady</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="">Registrace lokálního katalogu</a>{% endtrans %}</li>
+      </ul>
+      {% trans %}<strong>Pro uživatele dat</strong>{% endtrans %}
+      <ul class="unstyled indent">
+        <li>{% trans %}<a href="">Rozšířené vyhledávání</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="">Navrhnout datovou sadu</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="">API</a>{% endtrans %}</li>
+      </ul>
+    </div>
+    <div class="span3">
+      <strong>{% trans %}<a href="http://opendata.gov.cz/">Standardy</a>{% endtrans %}</strong>
+      <ul class="unstyled indent">
+        <li>{% trans %}<a href="http://opendata.gov.cz/standardy:start/">Doporučené postupy</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="http://opendata.gov.cz/vzor:start/">Publikační plány</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="http://opendata.gov.cz/nastroj:start/">Nástroje</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="">Prohlášení o přístupnosti</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="http://www.mvcr.cz/">Ministerstvo vnitra České republiky</a>{% endtrans %}</li>
+      </ul>
+    </div>
+    <div class="span3">
+      {% trans %}<strong>Kontakty</strong>{% endtrans %}
+      <div>
+      </div>
+      <br/>
+      {% block footer_lang %}
+        {% snippet "snippets/language_selector.html" %}
+      {% endblock %}
+    </div>
+  </div>
+{% endblock %}
+
