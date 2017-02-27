@@ -1,0 +1,25 @@
+{# 
+The CKAN extension use \ to separate path which cause fail to in lib/site-packages/jinja2.loaders.split_template_path.parse
+
+When used with corret path ie. '/' (to pass ninja2 parse method): extends "home/snippets/promoted.html"
+It causes the  RuntimeError: maximum recursion depth exceeded exception.
+
+So as a quick and dirty solution we override the template.
+#}
+
+{% set intro = g.site_intro_text %}
+
+<div class="module-content box">
+  <header>
+    {% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h1 class="page-heading">{{ _("Welcome to CKAN") }}</h1>
+      <p>
+        {% trans %}This is a nice introductory paragraph about CKAN or the site
+        in general. We don't have any copy to go here yet but soon we will
+        {% endtrans %}
+      </p>
+    {% endif %}
+  </header>
+</div>
