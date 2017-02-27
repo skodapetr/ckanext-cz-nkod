@@ -8,7 +8,7 @@
         <li>{% trans %}<a href="/">Domů</a>{% endtrans %}</li>
         <li>{% trans %}<a href="/dataset">Seznam datových sad</a>{% endtrans %}</li>
         <li>{% trans %}<a href="/organization">Seznam organizací</a>{% endtrans %}</li>
-        <li>{% trans %}<a href="">Aktuality</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="http://opendata.gov.cz">Aktuality</a>{% endtrans %}</li>
       </ul>
       <div class="attribution">
         {% block footer_attribution %}
@@ -21,14 +21,14 @@
     <div class="span3">
       {% trans %}<strong>Pro poskytovatele dat</strong>{% endtrans %}
       <ul class="unstyled indent">
-        <li>{% trans %}<a href="">Registrace datové sady</a>{% endtrans %}</li>
-        <li>{% trans %}<a href="">Registrace lokálního katalogu</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="https://portal.gov.cz/webfiller/FormService/Filler.Open?name=nkod.fo">Registrace datové sady</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="https://portal.gov.cz/webfiller/FormService/Filler.Open?name=nkod.fo">Registrace lokálního katalogu</a>{% endtrans %}</li>
       </ul>
       {% trans %}<strong>Pro uživatele dat</strong>{% endtrans %}
       <ul class="unstyled indent">
-        <li>{% trans %}<a href="">Rozšířené vyhledávání</a>{% endtrans %}</li>
-        <li>{% trans %}<a href="">Navrhnout datovou sadu</a>{% endtrans %}</li>
-        <li>{% trans %}<a href="">API</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="http://portal.gov.cz/portal/rejstriky/data/97898/indexH.html">Rozšířené vyhledávání</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="https://docs.google.com/forms/d/e/1FAIpQLSdUaVaCITtmHdTGxsU5xPvdzIygOA7wHHaotPRPAbglCF3mpw/viewform?embedded=true">Navrhnout datovou sadu</a>{% endtrans %}</li>
+        <li>{% trans %}<a href="http://linked.opendata.cz/dumps/nkod.trig.gz">API</a>{% endtrans %}</li>
       </ul>
     </div>
     <div class="span3">
@@ -44,6 +44,11 @@
     <div class="span3">
       {% trans %}<strong>Kontakty</strong>{% endtrans %}
       <div>
+        <ul class="unstyled indent">
+          <li>Kontaktní osoba: <a href="mailto:michal.kuban@mvcr.cz">Michal Kubáň</a></li>
+          <li>Email: <a href="mailto:michal.kuban@mvcr.cz">michal.kuban@mvcr.cz</a></li>
+          <li>Telefon: +420 974 816 395</li>
+        </ul>
       </div>
       <br/>
       {% block footer_lang %}
