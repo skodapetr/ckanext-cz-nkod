@@ -1,20 +1,45 @@
-/* Log navigation links. */
+
+/* General. */
+
+.btn-primary {
+  background-image: linear-gradient(to bottom, #1785C8, #085871);
+}
+
+a {
+	color: rgb(23, 133, 200);
+}
+
+/* Account header. */
+
+.account-masthead {
+    background-color: #666;
+}
+
+/* Navigation links header */
+
 .masthead {
   background-color: rgb(5, 127, 165);
 }
 
 /* Site footer. */
+
 .site-footer,
 body {
   background-color: rgb(5, 127, 165);
 }
 
 /* Change the colors of the "Search Your Data" box. */
+
 .homepage .module-search .module-content {
   background-color: rgb(5, 127, 165);
 }
 
+.homepage .module-search .tags {
+	background-color: rgb(0, 0, 0);
+}
+
 /* Update dialog. */
+
 .logo img {
     height: 48px;
     margin: 4px 0 4px 0;
