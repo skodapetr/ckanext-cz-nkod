@@ -133,12 +133,12 @@ class CkanExtCzNkod(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
                              toolkit.get_validator('ignore_missing')],
             'schema': [toolkit.get_converter('convert_from_extras'),
                        toolkit.get_validator('ignore_missing')],
-            'real_issued': [toolkit.get_validator('ignore_missing'),
-                               toolkit.get_converter('convert_from_extras')],
-            'real_modified': [toolkit.get_validator('ignore_missing'),
-                               toolkit.get_converter('convert_from_extras')],
-            'nkod_link': [toolkit.get_validator('ignore_missing'),
-                       toolkit.get_converter('convert_from_extras')],
+            'real_issued': [toolkit.get_converter('convert_from_extras'),
+                            toolkit.get_validator('ignore_missing')],
+            'real_modified': [toolkit.get_converter('convert_from_extras'),
+                              toolkit.get_validator('ignore_missing')],
+            'nkod_link': [toolkit.get_converter('convert_from_extras'),
+                          toolkit.get_validator('ignore_missing')],
             'temporal_end': [toolkit.get_converter('convert_from_extras'),
                              toolkit.get_validator('ignore_missing')]
         })
