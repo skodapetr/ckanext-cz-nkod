@@ -134,11 +134,11 @@ class CkanExtCzNkod(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
             'schema': [toolkit.get_converter('convert_from_extras'),
                        toolkit.get_validator('ignore_missing')],
             'real_issued': [toolkit.get_validator('ignore_missing'),
-                               toolkit.get_converter('convert_to_extras')],
+                               toolkit.get_converter('convert_from_extras')],
             'real_modified': [toolkit.get_validator('ignore_missing'),
-                               toolkit.get_converter('convert_to_extras')],
+                               toolkit.get_converter('convert_from_extras')],
             'nkod_link': [toolkit.get_validator('ignore_missing'),
-                       toolkit.get_converter('convert_to_extras')],
+                       toolkit.get_converter('convert_from_extras')],
             'temporal_end': [toolkit.get_converter('convert_from_extras'),
                              toolkit.get_validator('ignore_missing')]
         })
