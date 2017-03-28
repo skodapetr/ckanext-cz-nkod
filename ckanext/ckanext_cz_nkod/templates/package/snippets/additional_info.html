@@ -1,6 +1,18 @@
 {% ckan_extends %}
 
 {% block extras %}
+  {% if pkg_dict.real_issued %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Datum zveřejnění") }}</th>
+      <td class="dataset-details">{{ pkg_dict.real_issued }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.real_modified %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Datum poslední změny") }}</th>
+      <td class="dataset-details">{{ pkg_dict.real_modified }</td>
+    </tr>
+  {% endif %}
   {% if pkg_dict.license_link %}
     <tr>
       <th scope="row" class="dataset-label">{{ _("Odkaz na podmínky užití") }}</th>
@@ -59,6 +71,12 @@
     <tr>
       <th scope="row" class="dataset-label">{{ _("Dotčené časové období do") }}</th>
       <td class="dataset-details">{{ pkg_dict.temporal_end }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.nkod_link %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Odkaz na PVS") }}</th>
+      <td class="dataset-details"><a href="{{ pkg_dict.nkod_link }}">Datová sada na PVS</a></td>
     </tr>
   {% endif %}
 
