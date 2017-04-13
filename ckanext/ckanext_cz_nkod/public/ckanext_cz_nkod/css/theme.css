@@ -49,14 +49,14 @@ body {
 
 @media (min-width: 768px) {
   .hero {
-    background: url("../../../ckanext_cz_nkod/images/background.gif");
+    /*background: url("../../../ckanext_cz_nkod/images/background.gif");*/
     background-size: auto 100%;
     background-repeat:  repeat-x ;
   }
 }
 
 .ie7 .hero {
-    background: url("../../../ckanext_cz_nkod/images/background.gif");
+    /*background: url("../../../ckanext_cz_nkod/images/background.gif");*/
     background-size: auto 100%;
     background-repeat:  repeat-x ;
 }
